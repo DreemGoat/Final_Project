@@ -119,11 +119,11 @@ T = [['.....',
 shapes = [S, Z, I, O, J, L, T]
 shape_colors = [(255, 147, 0), (255, 0, 255), (255, 255, 0), (82, 0, 81), (255, 165, 0), (0, 255, 0), (0, 255, 255)]
 
-class Piece(object): #class function for the rows and columns which will build up the game board
+class Piece(object): #class function that holds all the essential data for the game which will be used many times throughout the code
     columns = 10  # x
     rows = 20  # y
  
-    def __init__(self, column, row, shape): #Initialization for the blocks that will fall down
+    def __init__(self, column, row, shape): 
         self.x = column
         self.y = row
         self.shape = shape
